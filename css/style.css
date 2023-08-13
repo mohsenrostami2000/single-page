@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,200&family=Open+Sans:ital@1&family=Outfit&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&family=Poppins:ital,wght@1,300&display=swap');
+
+/* || RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* ||MOBILE VERSION */
+    /* || GENERAL STAYLE */
+
+body {
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 373px;
+    background-color: hsl(257, 40%, 49%);
+    font-family: sans-serif;
+}
+
+/*|| HEADER */ 
+.logo img {
+   max-width: 10rem;
+   position: absolute;
+   top: 2.5rem;
+   left: 1.5rem;
+}
+
+/* || BODY */
+
+.container {
+    margin-top: 8rem;
+    text-align: center;
+    
+}
+
+.container img {
+    max-width: 85%;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: x-large;
+    margin: 2.5rem 2rem 0 2rem;
+}
+
+p {
+    color: rgba(245, 245, 245, 0.838);
+    margin: 1rem 1.3rem 1rem 1.3rem;
+    font-size: 0.95rem;
+    line-height: 25px;
+}
+
+button {
+    width: 6rem;
+    padding: 0.8rem;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: rgba(142, 143, 145, 0.944);
+}
+
+button a:any-link {
+    color: #333;
+    text-decoration: none;
+}
+
+/* || ICON */
+.social-icon, 
+.social-icon a:any-link {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.social-icon a:focus, 
+.social-icon a:hover {
+    color: rgb(137, 139, 140);
+}
+
+/* || FOOTER */
+
+.attribution {
+    font-size: x-small;
+    text-align: center;
+    
+}
+
+.attribution a:any-link {
+    color: whitesmoke;
+}
+
+.attribution a:focus,
+.attribution a:hover {
+    color: rgb(136, 136, 137);
+}
+
+/* || DESKTOP VERSION --------------------------------------------------*/
+@media (min-width: 1050px) {
+
+     * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+     }
+
+    .logo img {
+        min-width: 20rem;
+        position: absolute;
+        top: 2rem;
+        left: 5rem;
+        z-index: 1;
+    }
+
+    body {
+        background-image: url(../images/bg-desktop.svg);
+        background-size: cover;
+        width: 100%;
+        min-height: 100%;
+        background-color: hsl(257, 40%, 49%);
+    }
+
+    .container {
+        display: flex;
+        margin-right: 5rem;
+    }
+
+    .container img {
+        min-width: 709px;
+        margin: 3rem 0 0 5rem;
+    }
+
+    .text-button {
+        margin: 5rem 0 0 5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    button {
+        width: 8rem;
+    }
+
+
+    /* || FOOTER */
+
+    .attribution {
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        margin-left: -50px;
+        margin-bottom: 0.1rem;
+    }
+
+    /* || ICON */
+    .social-icon {
+        position: absolute;
+        bottom: 2rem;
+        right: 10%;
+    }
+
+
+    
+}
+
